@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PharmacyInventory.Entities;
 
 namespace PharmacyInventory.DataAccess
 {
@@ -9,5 +10,9 @@ namespace PharmacyInventory.DataAccess
             : base(options)
         {
         }
+
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<PrecioVenta> PrecioVentas { get; set; }
     }
 }
