@@ -19,4 +19,8 @@
     <ProjectReference Include="..\PharmacyInventory.DataAccess\PharmacyInventory.DataAccess.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DB\" />
+  </ItemGroup>
+
 </Project>
